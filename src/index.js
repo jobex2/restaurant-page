@@ -1,5 +1,7 @@
 
 import home from './home.js'
+import contact from './contact.js'
+import menu from './menu.js'
 
 //get element from html
 const body = document.body;
@@ -25,6 +27,18 @@ function Fheader (body) {
         if(count == 1){
             li.addEventListener("click", function(){
                 home(body);
+                Ffooter(body);
+            });
+        }
+        else if(count == 2){
+            li.addEventListener("click", function(){
+                menu(body);
+                Ffooter(body);
+            });
+        }
+        else if(count == 3){
+            li.addEventListener("click", function(){
+                contact(body);
                 Ffooter(body);
             });
         }
